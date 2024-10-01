@@ -4,8 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react'
 import headshot from './images/headshot.jpeg'
-import solproject from './images/solproject.png'
-import learnlead from './images/learnleaf.png'
+
 
 const skills = {
   languages: ['Python', 'JavaScript', 'Go', 'Rust', 'HTML', 'CSS', 'SQL'],

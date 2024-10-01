@@ -35,7 +35,7 @@ export default function Experience() {
                 <h2 className="text-xl font-semibold text-white">GM Financial | Software Engineer Intern</h2>
                 <p className="text-gray-400">Oct 2021 - Aug 2022</p>
                 <ul className="mt-2 text-gray-300 list-disc list-inside">
-                  <li>Spearheaded the design of an advanced OCR/AI project, recognized as "Innovation of the Year," delivering a 25% improvement in processing accuracy.</li>
+                  <li>Spearheaded the design of an advanced OCR/AI project, recognized as &quot;Innovation of the Year,&quot; delivering a 25% improvement in processing accuracy.</li>
                   <li>Engineered and deployed Linux virtual machines in Azure using Terraform, resulting in a 50% reduction in deployment time.</li>
                   <li>Architected and implemented a RFID system for automated vehicle data collection, boosting data accuracy by 35% and increasing processing speed by 40%.</li>
                 </ul>
