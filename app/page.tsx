@@ -9,7 +9,7 @@ import headshot from './images/headshot.jpeg'
 const skills = {
   languages: ['Python', 'JavaScript', 'Go', 'Rust', 'HTML', 'CSS', 'SQL'],
   frameworks: ['React.js', 'Node.js', 'Next.js', 'FastAPI'],
-  technologies: ['Azure', 'AWS', 'Jenkins', 'UCD', 'TerraForm', 'Elasticsearch', 'MongoDB', 'MySQL', 'Firebase', 'Unix', 'Bash', 'Git', 'Gitlab']
+  technologies: ['Azure', 'AWS', 'Jenkins', 'UCD', 'TerraForm', 'Elasticsearch', 'MongoDB', 'MySQL', 'Firebase', 'Unix', 'Bash', 'Git', 'Gitlab', 'Docker', 'Kubernetes']
 }
 
 const experiences = [
