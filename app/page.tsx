@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react'
 import headshot from './images/headshot.jpeg'
 
-
 const skills = {
   languages: ['Python', 'JavaScript', 'Go', 'Rust', 'HTML', 'CSS', 'SQL'],
   frameworks: ['React.js', 'Node.js', 'Next.js', 'FastAPI'],
@@ -67,7 +66,7 @@ const projects = [
   {
     title: "Learn Leaf Organizer App",
     description: "A task/project management app using Node.js, Firebase, and React.js.",
-    image:  "/learnleaf.png",
+    image: "/learnleaf.png",
     tech: ["React.js", "Node.js", "Firebase"],
     achievements: [
       "Designed and built dynamic user interfaces",
@@ -89,13 +88,12 @@ const projects = [
     ],
     github: "https://github.com/johnabot/Cookie-Monster-Solana-dApp",
     demo: "https://solana-gif-app.vercel.app"
-  }
-  ,
+  },
   {
     title: "Doctoral-Database Web App",
     description: "Developed a web-based application to manage doctoral research projects, providing an intuitive interface for both administrators and users",
     image: "/doctordb.png",
-    tech: ["HTML","CSS", "SQL","PHP", "MySql"],
+    tech: ["HTML", "CSS", "SQL", "PHP", "MySql"],
     achievements: [
       "A searchable database for doctoral projects",
       "Admin capabilities to add, edit, and delete research entries",
@@ -104,27 +102,26 @@ const projects = [
     github: "https://github.com/vinsanite/doctoral-database",
     demo: "https://vinsanite.github.io/doctoral-database/"
   }
-  
 ]
 
 export default function Home() {
   const [activeProject, setActiveProject] = useState(null)
 
   return (
-    <div className="max-w-4xl mx-auto pt-16">
+    <div className="max-w-4xl mx-auto pt-16 px-4 sm:px-6 lg:px-8">
       <section id="home" className="mb-16">
         <div className="bg-white dark:bg-gray-800 shadow-xl rounded-lg overflow-hidden transition-colors duration-300">
           <div className="p-6">
-            <div className="flex items-center">
+            <div className="flex flex-col sm:flex-row items-center">
               <Image
-                src= {headshot}
+                src={headshot}
                 alt="Johnathan-hung Doan"
                 width={150}
                 height={150}
-                className="rounded-full"
+                className="rounded-full mb-4 sm:mb-0 sm:mr-6"
               />
-              <div className="ml-6">
-                <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Johnathan-hung Doan</h1>
+              <div className="text-center sm:text-left">
+                <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Johnathan-hung Doan</h1>
                 <p className="mt-2 text-xl text-gray-600 dark:text-gray-300">Software Engineer</p>
               </div>
             </div>
@@ -192,7 +189,7 @@ export default function Home() {
                   <p className="text-gray-600 dark:text-gray-400">{exp.period}</p>
                   <ul className="mt-2 text-gray-600 dark:text-gray-300 list-disc list-inside">
                     {exp.achievements.map((achievement, achievementIndex) => (
-                      <li key={achievementIndex}>{achievement}</li>
+                      <li key={achievementIndex} className="text-sm sm:text-base">{achievement}</li>
                     ))}
                   </ul>
                 </div>
@@ -226,12 +223,12 @@ export default function Home() {
                     </div>
                     <div className="md:w-2/3">
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                      <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
+                      <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm sm:text-base">{project.description}</p>
                       <div className="mb-4">
                         <h4 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-2">Technologies Used</h4>
                         <div className="flex flex-wrap gap-2">
                           {project.tech.map((tech, techIndex) => (
-                            <span key={techIndex} className="px-3 py-1 bg-blue-500 text-white text-sm rounded-full">
+                            <span key={techIndex} className="px-3 py-1 bg-blue-500 text-white text-xs sm:text-sm rounded-full">
                               {tech}
                             </span>
                           ))}
@@ -242,27 +239,27 @@ export default function Home() {
                           <h4 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-2">Achievements</h4>
                           <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
                             {project.achievements.map((achievement, achievementIndex) => (
-                              <li key={achievementIndex}>{achievement}</li>
+                              <li key={achievementIndex} className="text-sm sm:text-base">{achievement}</li>
                             ))}
                           </ul>
                         </div>
                       )}
-                      <div className="flex space-x-4">
+                      <div className="flex flex-wrap gap-4">
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center px-4 py-2 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors duration-200"
+                          className="inline-flex items-center px-4 py-2 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors duration-200 text-sm"
                         >
-                          <Github className="mr-2" /> GitHub
+                          <Github className="mr-2 h-4 w-4" /> GitHub
                         </a>
                         <a
                           href={project.demo}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                          className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 text-sm"
                         >
-                          <ExternalLink className="mr-2" /> Live Demo
+                          <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
                         </a>
                       </div>
                     </div>
@@ -280,16 +277,16 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Me</h2>
             <div className="space-y-4">
               <div className="flex items-center">
-                <Mail className="h-6 w-6 text-gray-600 dark:text-gray-400 mr-2" />
-                <a href="mailto:johnathanhungdoan@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">johnathanhungdoan@gmail.com</a>
+                <Mail className="h-6 w-6 text-gray-600 dark:text-gray-400 mr-2 flex-shrink-0" />
+                <a href="mailto:johnathanhung@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm sm:text-base break-all">johnathanhungdoan@gmail.com</a>
               </div>
               <div className="flex items-center">
-                <Github className="h-6 w-6 text-gray-600 dark:text-gray-400 mr-2" />
-                <a href="https://github.com/johnabot" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">github.com/johnabot</a>
+                <Github className="h-6 w-6 text-gray-600 dark:text-gray-400 mr-2 flex-shrink-0" />
+                <a href="https://github.com/johnabot" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm sm:text-base break-all">github.com/johnabot</a>
               </div>
               <div className="flex items-center">
-                <Linkedin className="h-6 w-6 text-gray-600 dark:text-gray-400 mr-2" />
-                <a href="https://linkedin.com/in/johnathandoan" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">linkedin.com/in/johnathandoan</a>
+                <Linkedin className="h-6 w-6 text-gray-600 dark:text-gray-400 mr-2 flex-shrink-0" />
+                <a href="https://linkedin.com/in/johnathandoan" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm sm:text-base break-all">linkedin.com/in/johnathandoan</a>
               </div>
             </div>
           </div>
