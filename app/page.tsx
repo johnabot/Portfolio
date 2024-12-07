@@ -63,6 +63,18 @@ const experiences = [
 ]
 
 const projects = [
+    {
+        title: "Prism",
+        description: "DevOps/Observability tool for monitoring and managing cloud resources.",
+        image: "/prism.png",
+        tech: ["Docker", "Kubernetes", "Kafka", "ElasticSearch", "Nginx", "Next.js", "Go", "FastAPI", "Postgres", "Redis", "Consul"],
+        achievements: [
+        "Designed and developed a user-friendly interface for monitoring and managing cloud resources",
+        "Integrated real-time data streaming and processing for efficient resource management",
+        "User authentication and authorization for secure access to cloud resources"
+        ],
+        github: "https://github.com/prism-o11y"
+    },
   {
     title: "Learn Leaf Organizer App",
     description: "A task/project management app using Node.js, Firebase, and React.js.",
@@ -128,15 +140,13 @@ export default function Home() {
             <div className="mt-6">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white">About Me</h2>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                I&apos;m a passionate software engineer with experience in full-stack development, cloud technologies, and blockchain. 
-                Currently pursuing a B.S. in Computer Software Engineering at The University of Texas at Arlington, 
-                I&apos;m dedicated to creating efficient, scalable, and user-friendly applications.
+              As a software engineer with a B.S. in Computer Software Engineering, I bring robust expertise in full-stack development, cloud technologies, and blockchain. Passionate about creating efficient and scalable applications, I leverage my technical skills to develop innovative solutions that bridge cutting-edge technology with practical, user-friendly design.
               </p>
             </div>
             <div className="mt-6">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Education</h2>
               <p className="mt-2 text-gray-600 dark:text-gray-300">
-                The University of Texas at Arlington | Bachelor of Science (B.S) in Computer Software Engineering (Dec 2024)
+                The University of Texas at Arlington | Bachelor of Science (B.S) in Computer Software Engineering
               </p>
             </div>
             <div className="mt-6">
