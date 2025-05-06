@@ -6,12 +6,21 @@ import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react'
 import headshot from './images/headshot.jpeg'
 
 const skills = {
-  languages: ['Python', 'JavaScript', 'Go', 'Rust', 'HTML', 'CSS', 'SQL'],
-  frameworks: ['React.js', 'Node.js', 'Next.js', 'FastAPI'],
-  technologies: ['Azure', 'AWS', 'Jenkins', 'UCD', 'TerraForm', 'Elasticsearch', 'MongoDB', 'MySQL', 'Firebase', 'Unix', 'Bash', 'Git', 'Gitlab', 'Docker', 'Kubernetes']
+  languages: ['Python', 'JavaScript', 'Go', 'Rust', 'HTML', 'CSS', 'SQL', 'Bash', 'Groovy'],
+  frameworks: ['Next.js', 'FastAPI'],
+  technologies: ['Kubernetes', 'Azure', 'AWS', 'Jenkins', 'UCD', 'TerraForm', 'Elasticsearch', 'MongoDB', 'MySQL', 'Firebase', 'Unix', 'Bash', 'Git', 'Gitlab', 'Docker']
 }
 
 const experiences = [
+  {
+    company: "JP. Morgan Chase & Co",
+    position: "Software Engineer I",
+    period: "Feb 2025 - Present",
+    achievements: [
+      "Automated Modular Amazon EKS version rollouts by integrating a Groovy based Jenkins pipeline that parses and updates ladder.md, triggering one click upgrades and cutting manual effort by ~80% ",
+      "Wrote a secure Bash utility that authenticates via company SSO to auto create develop branches for every new Kubernetes minor version, slashing branch-prep time from ~2 hours to > 30 seconds (-99%)",
+    ]
+  },
   {
     company: "Fannie Mae",
     position: "Full-Stack Software Engineer Intern",
