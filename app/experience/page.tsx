@@ -6,6 +6,14 @@ export default function Experience() {
             <h1 className="text-3xl font-bold text-white mb-6">Professional Experience</h1>
             <div className="space-y-6">
               <div>
+                <h2 className="text-xl font-semibold text-white"> JP. Morgan Chase & Co | Software Engineer I </h2>
+                <p className="text-gray-400">Feb 2025 - Present</p>
+                <ul className="mt-2 text-gray-300 list-disc list-inside">
+                  <li>Automated Modular Amazon EKS version rollouts by integrating a Groovy based Jenkins pipeline that parses and updates ladder.md, triggering one click upgrades and cutting manual effort by ~80% </li>
+                  <li>Wrote a secure Bash utility that authenticates via company SSO to auto create develop branches for every new Kubernetes minor version, slashing branch-prep time from ~2 hours to `{'>'}` 30 seconds </li>
+                </ul>
+              </div>
+              <div>
                 <h2 className="text-xl font-semibold text-white">Fannie Mae | Full-Stack Software Engineer Intern</h2>
                 <p className="text-gray-400">June 2024 - Aug 2024</p>
                 <ul className="mt-2 text-gray-300 list-disc list-inside">
